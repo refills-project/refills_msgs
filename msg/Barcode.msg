@@ -1,0 +1,2 @@
+geometry_msgs/PoseStamped barcode_pose
+string barcode
