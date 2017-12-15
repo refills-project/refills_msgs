@@ -1,0 +1,9 @@
+geometry_msgs/PoseStamped separator_location
+string object_name
+
+float32 obj_width
+float32 obj_height
+float32 obj_depth
+
+---
+int8 object_count

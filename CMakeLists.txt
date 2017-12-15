@@ -16,10 +16,10 @@ set(MSG_FILES
   Barcode.msg
  )
 
-# set(SRV_FILES
-#   QueryMotion.srv
-#   SetEnable.srv
-# )
+set(SRV_FILES
+  CountObjects.srv
+)
+
 
 # set(ACT_FILES
 #   WholeBody.action
@@ -32,7 +32,7 @@ find_package(catkin REQUIRED COMPONENTS
 )
 
 add_message_files(DIRECTORY msg FILES ${MSG_FILES})
-# add_service_files(DIRECTORY srv FILES ${SRV_FILES})
+add_service_files(DIRECTORY srv FILES ${SRV_FILES})
 # add_action_files(DIRECTORY action FILES ${ACT_FILES})
 
 generate_messages(DEPENDENCIES ${MSG_DEPS})
