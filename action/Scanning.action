@@ -1,0 +1,33 @@
+# Goal definition of a single scanning action.
+
+# Pre-defined constants to code the type of scanning action.
+int8 UNKNOWN_TYPE=0  # default value does not code a valid command
+int8 SHELF=1  # detect and localize shelf floors
+int8 BAR_CODE=2  # detect, recognize, and localize bar codes
+int8 SEPARATOR=3  # detect and localize separators
+int8 OBJECT_RECOGNITION=4  # detect, recognize, and localize front object in facing
+int8 OBJECT_COUNTING=5  # count all objects within one facing
+
+# Requested type of scanning action, fill with one of the above constants.
+int8 type
+
+# List of locations that shall be scanned.
+refills_msgs/Location[] locations
+
+---
+# Result definition of a single scanning action.
+
+# Pre-defined constants to code possible runtime failures.
+int8 SUCCESS=-1  # to report successful execution
+int8 UNKNOWN_ERROR=0 # default value codes an unknown error
+
+# Encountered runtime errors.
+int8 error_code
+
+# String field to report human-readable description of runtime failures; optional.
+string error_string
+
+---
+# Feedback definition of a single scanning action.
+refills_msgs/Location current_loc  # location currently being scanned
+float64 progress  # in percent, convenience feature to display progress bar
