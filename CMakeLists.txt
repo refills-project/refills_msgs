@@ -13,7 +13,6 @@ set(MSG_DEPS
 
 set(MSG_FILES
   Barcode.msg
-  Location.msg
  )
 
 set(SRV_FILES
