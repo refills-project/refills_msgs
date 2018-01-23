@@ -8,7 +8,8 @@ int8 COMPLETE_SCAN=1  # perform all valid scanning steps
 int8 type
 
 # List of locations that shall be scanned, encoded by their unique IDs,
-# as defined in the semantic store maps.
+# as defined in the semantic store maps. A location can be either a rack
+# or a shelf. Not supported are individual shelf floors and facings.
 string[] loc_id
 
 ---
