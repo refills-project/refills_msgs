@@ -14,6 +14,8 @@ set(MSG_DEPS
 
 set(MSG_FILES
   Barcode.msg
+  Separator.msg
+  SeparatorArray.msg
  )
 
 set(SRV_FILES
