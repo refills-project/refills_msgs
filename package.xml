@@ -1,11 +1,13 @@
 <package format="2">
   <name>refills_msgs</name>
-  <version>0.0.4</version>
+  <version>0.0.5</version>
 
   <description>
     Some auxiliary messages for the refills project
   </description>
   <maintainer email="stelter@uni-bremen.de">Simon Stelter</maintainer>
+  <author email="stelter@uni-bremen.de">Simon Stelter</author>
+  <author email="georg.bartels@cs.uni-bremen.de">Georg Bartels</author>
   <license>BSD</license>
 
   <buildtool_depend>catkin</buildtool_depend> 
@@ -16,6 +18,5 @@
   <depend>actionlib_msgs</depend>
   <depend>std_msgs</depend>
   <depend>geometry_msgs</depend>
-  <depend>sensor_msgs</depend>
 
 </package>

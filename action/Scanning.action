@@ -1,0 +1,37 @@
+# Goal definition of a single scanning action.
+
+# Pre-defined constants to code the type of scanning action.
+int8 UNKNOWN_TYPE=0  # default value does not code a valid command
+int8 COMPLETE_SCAN=1  # perform all valid scanning steps
+
+# Requested type of scanning action, fill with one of the above constants.
+int8 type
+
+# List of locations that shall be scanned, encoded by their unique IDs,
+# as defined in the semantic store maps. A location can be either a rack
+# or a shelf. Not supported are individual shelf floors and facings.
+string[] loc_id
+
+---
+# Result definition of a single scanning action.
+
+# Pre-defined constants to code possible runtime failures.
+int8 SUCCESS=0  # default values codes successful execution
+int8 UNKNOWN_ERROR=1 # some unknown error
+
+# Encountered runtime errors.
+int8 error_code
+
+# String field to report human-readable description of runtime failures; optional.
+string error_string
+
+---
+# Feedback definition of a single scanning action.
+
+# Unique id of the location that is currently being scanned, as defined
+# in the semantic store maps.
+string current_loc_id
+
+# Estimated progress of the entire scanning action, expressed in percent.
+# This is a convenience feature to display progress bar.
+float64 progress

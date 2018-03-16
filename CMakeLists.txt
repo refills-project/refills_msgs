@@ -9,7 +9,6 @@ set(MSG_DEPS
   std_msgs
   geometry_msgs
   actionlib_msgs
-  sensor_msgs
 )
 
 set(MSG_FILES
@@ -22,10 +21,9 @@ set(SRV_FILES
   CountObjects.srv
 )
 
-
-# set(ACT_FILES
-#   WholeBody.action
-# )
+set(ACT_FILES
+  Scanning.action
+)
 
 find_package(catkin REQUIRED COMPONENTS
   ${MSG_DEPS}
@@ -35,7 +33,7 @@ find_package(catkin REQUIRED COMPONENTS
 
 add_message_files(DIRECTORY msg FILES ${MSG_FILES})
 add_service_files(DIRECTORY srv FILES ${SRV_FILES})
-# add_action_files(DIRECTORY action FILES ${ACT_FILES})
+add_action_files(DIRECTORY action FILES ${ACT_FILES})
 
 generate_messages(DEPENDENCIES ${MSG_DEPS})
 
