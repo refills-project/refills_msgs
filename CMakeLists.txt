@@ -8,6 +8,7 @@ endif()
 set(MSG_DEPS
   std_msgs
   geometry_msgs
+  sensor_msgs
   actionlib_msgs
 )
 
@@ -23,6 +24,8 @@ set(SRV_FILES
 
 set(ACT_FILES
   Scanning.action
+  ProductCounting.action
+  ProductIdentification.action 
 )
 
 find_package(catkin REQUIRED COMPONENTS

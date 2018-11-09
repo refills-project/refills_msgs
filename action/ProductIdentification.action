@@ -1,0 +1,14 @@
+#Goal definition 
+
+sensor_msgs/CompressedImage image
+# this will be based on OpenCV standards: upper left corner and height width
+sensor_msgs/RegionOfInterest roi
+
+---
+
+#Result definition of the actions
+string gtin
+---
+
+#Feedback
+string status

@@ -1,0 +1,14 @@
+#Goal definition 
+
+sensor_msgs/CompressedImage cropped_depth_image
+
+---
+
+#Result definition of the actions
+
+int8 count
+
+---
+
+#Feedback
+string status
