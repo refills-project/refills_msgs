@@ -1,0 +1,6 @@
+# request definition
+# empty because no information is needed
+---
+# response definition
+# shelf system IDs known in the knowledge base
+string[] ids

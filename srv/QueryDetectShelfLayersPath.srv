@@ -1,0 +1,13 @@
+# request definition
+# ID of shelf system for which shelf layers shall be detected
+string id
+---
+# response definition
+# path that shall be followed during shelf layer detection
+refills_msgs/FullBodyPath path
+
+# constants used to report errors
+int32 SUCCESS=0
+int32 INVALID_ID=1
+# member to report errors, uses the above defined constants
+int32 error

@@ -1,0 +1,13 @@
+# request definition
+# ID of facing for which the products shall be counted
+string id
+---
+# response definition
+# posture that shall be maintained during counting
+refills_msgs/FullBodyPosture posture
+
+# constants used to report errors
+int32 SUCCESS=0
+int32 INVALID_ID=1
+# member to report errors, uses the above defined constants
+int32 error

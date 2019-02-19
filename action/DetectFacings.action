@@ -1,0 +1,20 @@
+# goal definition
+# shelf layer ID of the shelf layer whose facings shall be detected
+string id
+---
+# result definition
+# new facing IDs of the facings that have been detected an memorized
+string[] ids
+
+# constants used to report errors
+int32 SUCCESS=0
+int32 INVALID_ID=1
+int32 SERVER_BUSY=2
+int32 ABORTED=3
+# member to report errors, uses the above defined constants
+int32 error
+# optional, human-readable error message
+string error_msg
+---
+# feedback definition
+# currently empty

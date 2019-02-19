@@ -1,0 +1,12 @@
+# request definition
+# empty because no information is needed to stop the currently running perception routine
+---
+# response definition
+# constants used to report errors
+int32 SUCCESS=0
+int32 NO_RUNNING_JOB=1
+
+# member to report errors, uses the above defined constants
+int32 error
+# optional, human-readable error message
+string error_msg

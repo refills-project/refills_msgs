@@ -1,0 +1,13 @@
+# request definition
+# shelf system ID to which the shelf layers belong
+string id
+---
+# response definition
+# shelf layer IDs that belong to the shelf system of interest
+string[] ids
+
+# constants used to report errors
+int32 SUCCESS=0
+int32 INVALID_ID=1
+# member to report errors, uses the above defined constants
+int32 error
