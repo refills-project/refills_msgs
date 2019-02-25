@@ -3,6 +3,7 @@ int8 BASE=1
 int8 CAMERA=2
 int8 BOTH=3
 int8 JOINT=4
+int8 CAM_FOOTPRINT=5
 
 int8 type
 
