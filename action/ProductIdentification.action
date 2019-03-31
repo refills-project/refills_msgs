@@ -4,11 +4,12 @@ sensor_msgs/CompressedImage image
 # this will be based on OpenCV standards: upper left corner and height width
 sensor_msgs/RegionOfInterest roi
 # gtin of the object that should be in the rect
-string gtin
+string goal_gtin
 ---
 
 # resulting confidence 
 float32 confidence
+string result_gtin
 ---
 
 #Feedback
