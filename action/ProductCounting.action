@@ -1,6 +1,7 @@
 #Goal definition 
 
 sensor_msgs/CompressedImage cropped_depth_image
+sensor_msgs/CompressedImage cropped_rgb_image
 
 ---
 
