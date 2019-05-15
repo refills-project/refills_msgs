@@ -1,6 +1,14 @@
 #Goal definition 
 
-sensor_msgs/CompressedImage cropped_depth_image
+#Constants used to indicate the type of cropped_image.
+uint8 INVALID_IMAGE=0
+uint8 DEPTH_IMAGE=1
+uint8 RGB_IMAGE=2
+
+#The type of cropped_image. This has the value of one of the above constants.
+uint8 image_type
+
+sensor_msgs/CompressedImage cropped_image
 
 ---
 
