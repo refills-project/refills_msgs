@@ -23,6 +23,7 @@ add_service_files(
   QueryDetectFacingsPath.srv
   QueryCountProductsPosture.srv
   CountObjects.srv
+  QueryLogging.srv
 )
 
 add_action_files(

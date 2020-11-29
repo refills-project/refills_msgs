@@ -1,0 +1,33 @@
+# all values posible necessary for loggin
+string tag
+string robot_iri
+string robot_arm_iri
+string store_iri
+string shelve_iri
+string shelve_row_iri
+string shelve_floor_iri
+string shelve_facing_iri
+float32 begin_act
+float32 end_act
+string episode_iri
+string act_iri
+string parent_act_iri
+---
+string tag
+string robot_iri
+string robot_arm_iri
+string store_iri
+string shelve_iri
+string shelve_row_iri
+string shelve_floor_iri
+string shelve_facing_iri
+float32 begin_act
+float32 end_act
+string episode_iri
+string act_iri
+string parent_act_iri
+# constants used to report errors
+int32 SUCCESS=0
+int32 INVALID_ID=1
+# member to report errors, uses the above defined constants
+int32 error
