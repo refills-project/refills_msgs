@@ -14,3 +14,5 @@ geometry_msgs/PoseStamped base_pos
 geometry_msgs/PoseStamped camera_pos
 
 sensor_msgs/JointState goal_joint_state
+
+string tag
