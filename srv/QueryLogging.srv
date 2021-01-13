@@ -7,8 +7,8 @@ string shelve_iri
 string shelve_row_iri
 string shelve_floor_iri
 string shelve_facing_iri
-float32 begin_act
-float32 end_act
+float64 begin_act
+float64 end_act
 string episode_iri
 string act_iri
 string parent_act_iri
@@ -21,8 +21,8 @@ string shelve_iri
 string shelve_row_iri
 string shelve_floor_iri
 string shelve_facing_iri
-float32 begin_act
-float32 end_act
+float64 begin_act
+float64 end_act
 string episode_iri
 string act_iri
 string parent_act_iri
